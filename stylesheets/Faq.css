@@ -1,0 +1,116 @@
+.faq-section {
+    background-image: url("/src/images/faq/faq-car.png");
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.faq-content__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 60rem;
+}
+
+.faq-content__title h5 {
+    font-size: 30px;
+}
+
+.faq-content__title h2 {
+    font-size: 50px;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.faq-content__title p {
+    font-size: 18px;
+    color: gray;
+    max-width: 40rem;
+}
+
+.all-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.faq-box {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0, 0,1);
+    width: 80rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .faq-box {
+        width: 100%;
+    }
+}
+
+.faq-box-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
+    padding-left: 3rem;
+    transition: .15s ease;
+}
+
+.faq-box-question p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    ;
+}
+
+.faq-box-question .faq-icon {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    padding-right: 2rem;
+}
+
+.faq-box-answer {
+     font-size: 18px;
+     color: gray;
+     line-height: 1.5;
+     max-height: 0;
+     overflow: hidden;
+     transition: .4s ease;
+     padding: 0 4rem;
+}
+
+.active-answer {
+    max-height: 20rem;
+    padding: 2.5rem 4rem;
+    transition: .4s ease;
+}
+
+@media screen and (max-width: 550px) {
+    .active-answer {
+        max-height: 30rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .active-answer {
+        max-height: 45rem;
+    }
+}
+
+.active-question {
+    background-color: #ff4d30;
+    color: white;
+    box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+}

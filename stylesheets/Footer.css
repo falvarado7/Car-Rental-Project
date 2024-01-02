@@ -1,0 +1,142 @@
+footer {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+ footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 8rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer-content {
+        grid-template-columns: 1fr;           
+        width: 100%;
+    }
+}
+
+.footer-content-1 {
+    list-style: none;
+}
+
+@media screen and (max-width: 650px) {
+    .footer-content-1 {
+      text-align: center;  
+      padding-left: 0;  
+    }
+}
+
+.footer-content-1 li a {
+    text-decoration: none;
+    color: black;
+    transition: all .2s;
+}
+
+.footer-content-1 li a:hover {
+    color: #ff4d30;
+}
+
+.footer-content-1 li:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.footer-content-1 li:nth-child(2) {
+    color: gray;
+    font-size: 19px;
+    margin-bottom: 2rem
+}
+
+.footer-content-1 span {
+    font-weight: 700;
+}
+
+.footer-content-1 li:nth-child(3), .footer-content-1 li:nth-child(4) {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer-content-2 {
+    text-decoration: none;
+    list-style: none;
+}
+
+@media screen and (max-width: 650px) {
+    .footer-content-2 {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+.footer-content-2 a {
+    text-decoration: none;
+    color: black;
+    transition: all .2s;
+}
+
+.footer-content-2 a:hover {
+    color: #ff4d30;
+}
+
+.footer-content-2 li {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.footer-content-2 li:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: auto;
+}
+
+
+
+.footer-content-2 input {
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #ececec;
+    border-width: 1px;
+    border-color: transparent;
+    padding: 10px 60px;
+    outline: none;
+}
+
+
+.submit-email {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #ff4d30;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+    box-shadow: 0 10px 15px 0 rgb(255, 83, 48, 25%);
+    border: 2px solid #ff4d30;
+    font-size: 1rem;
+    width: 18.6rem;
+}
+
+.submit-email:hover {
+    box-shadow: 0 10px 15px 0 rgb(255, 83, 48, 40%);
+    background-color: #fa4226;
+}
+
+
